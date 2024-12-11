@@ -9,13 +9,13 @@ const app = express();
 app.use(cors())
 
 // giving custum cors
-app.use(
-  cors({
-    origin:'http://localhost:3000',
-    methods: ['GET','PUT','POST','DELETE'],
-    allowedHeaders: [  'content-Type']
-  })
-)
+// app.use(
+//   cors({
+//     origin:'http://localhost:3000',
+//     methods: ['GET','PUT','POST','DELETE'],
+//     allowedHeaders: [  'content-Type']
+//   })
+// )
 
 app.use(express.json());
 app.use('/books',router);
