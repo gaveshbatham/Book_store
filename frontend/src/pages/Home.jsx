@@ -55,7 +55,7 @@ const Home = () => {
 
             <tbody>
               {
-                books.map((book ,index)=>{
+                books.map((book ,index=1)=>(
                   <tr>
                     <td className='border border-slate-700 round-md text-center' >
                       {index+1}
@@ -65,7 +65,7 @@ const Home = () => {
                     </td>
                     
                     <td className='border border-slate-700 round-md text-center max-md:hidden' >
-                      {book.auhor}
+                      {book.author}
                     </td>
 
                     <td className='border border-slate-700 round-md text-center max-md:hidden' >
@@ -93,7 +93,7 @@ const Home = () => {
 
 
                   </tr>
-                })
+                ))
               }
             </tbody>
 
